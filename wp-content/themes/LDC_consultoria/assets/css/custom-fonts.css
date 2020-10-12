@@ -1,0 +1,20 @@
+/*
+ * Embed Theme Fonts
+ *
+ * Font Face code generated with the great Google Webfonts Helper by Mario Ranftl
+ * https://github.com/majodev/google-webfonts-helper/
+ *
+ * @package Poseidon
+ */
+
+/* ubuntu-regular - latin-ext_latin */
+@font-face {
+    font-family: 'Narkisim';
+    font-style: normal;
+    font-weight: 400;
+	font-display: swap;
+    src: local('narkisim'), local('narkisim'),
+        url('../fonts/narkisim.ttf') format('narkisim'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/narkisim.ttf') format('narkisim'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
