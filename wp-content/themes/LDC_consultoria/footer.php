@@ -49,10 +49,11 @@
                         <?php $campos_front= get_field('home');?>
                         <?php if($campos_front['inscreva-se']);?>
 
-                <a href="<?php echo $campos_front['inscreva-se'];?>"> <button type=" button"
-               class="btn btn-primary">
-              Increva-se </button>
-                </a>
+                        <a href="http://localhost/consultoria_LDC/inscreva-se/"> <button type=" button"
+                        class="btn btn-primary">
+                        Inscreva-se </button>
+                        </a>
+
                         </p>
 
                         <h4>Novidade</h4>

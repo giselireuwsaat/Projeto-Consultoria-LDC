@@ -29,11 +29,11 @@ Template Name: home
             <div class="carousel-inner" role="listbox">
                 <div class="carousel-item active">
                     <div class="view">
-                        <img class="d-block w-100" src="<?php bloginfo('template_directory');?>/assets/img/Foto_Carrosel1.png"
+                        <img class="d-block w-100" src="<?php bloginfo('template_directory');?>/assets/img/Foto_Carrosel2.png"
                             alt="First slide">
                         <div class="mask rgba-black-light"></div>
                     </div>
-                    <div class="carousel-caption">
+                    <div class="carousel-caption txt-slide1">
                         <h3 class="h3-responsive"><?php echo $campos_front['slide1_principal'];?></h3>
                         <p><?php echo $campos_front['slide1_secundario'];?></p>
                     </div>
@@ -41,11 +41,11 @@ Template Name: home
                 <div class="carousel-item">
                     <!--Mask color-->
                     <div class="view">
-                        <img class="d-block w-100" src="<?php bloginfo('template_directory');?>/assets/img/Foto_Carrosel2.png"
+                        <img class="d-block w-100" src="<?php bloginfo('template_directory');?>/assets/img/Foto_Carrosel1.png"
                             alt="Second slide">
                         <div class="mask rgba-black-strong"></div>
                     </div>
-                    <div class="carousel-caption">
+                    <div class="carousel-caption txt-slide2">
                         <h3 class="h3-responsive"><?php echo $campos_front['slide2_principal'];?></h3>
                         <p><?php echo $campos_front['slide2_secundario'];?></p>
                     </div>
@@ -57,7 +57,7 @@ Template Name: home
                             alt="Third slide">
                         <div class="mask rgba-black-slight"></div>
                     </div>
-                    <div class="carousel-caption">
+                    <div class="carousel-caption txt-slide3">
                         <h3 class="h3-responsive"><?php echo $campos_front['slide3_principal'];?></h3>
                         <p><?php echo $campos_front['slide3_secundario'];?></p>
                     </div>
@@ -170,7 +170,7 @@ Template Name: home
 
                                             <a href="http://localhost/consultoria_LDC/inscreva-se/"> <button type=" button"
                                                     class="btn btn-primary">
-                                                    Increva-se </button>
+                                                    Inscreva-se </button>
                                            </a>
 
 
@@ -300,9 +300,9 @@ Template Name: home
                                         <div class="modal-footer">
                                             <?php if($campos_front['inscreva-se']);?>
 
-                                            <a href="<?php echo $campos_front['inscreva-se'];?>"> <button type=" button"
+                                            <a href="http://localhost/consultoria_LDC/inscreva-se/"> <button type=" button"
                                                     class="btn btn-primary">
-                                                    Increva-se </button>
+                                                    Inscreva-se </button>
                                            </a>
 
 
@@ -432,9 +432,9 @@ Template Name: home
                                         <div class="modal-footer">
                                             <?php if($campos_front['inscreva-se']);?>
 
-                                            <a href="<?php echo $campos_front['inscreva-se'];?>"> <button type=" button"
+                                            <a href="http://localhost/consultoria_LDC/inscreva-se/"> <button type=" button"
                                                     class="btn btn-primary">
-                                                    Increva-se </button>
+                                                    Inscreva-se </button>
                                            </a>
 
 
@@ -495,54 +495,39 @@ Template Name: home
 
     <section class="servicos separa-sections">
 
-<img class="h1-img" src="<?php bloginfo('template_directory');?>/assets/img/detalhe_titulo.png">
-            <h1>Serviços Oferecidos</h1>
+    
+    <img class="h1-img" src="<?php bloginfo('template_directory');?>/assets/img/detalhe_titulo.png">
+            <h1>O que fazemos</h1>
             <hr>
 
-</div>
-<div class="resultados">
-<div class="container-fluid">
-<div class="row">
-    <div class="col-md-3 resultado">
-        <?php
-if( is_active_sidebar( 'resul1' ) ){
-dynamic_sidebar('resul1');
 
-}
-?>      
- </div>
+            <div class="row justify-content-md-center servico">
+                <div class="col-md-4 resultado" style="background-color: #F0F2F6;"> 
+                    <h2 class="resultado1"><?php echo $campos_front['servico-resultado1'];?></h2>
+                    
+                    <img class="img-resultado" src="<?php echo $campos_front['servico-img1'];?>"/>
 
+                </div>
 
-    <div class="col-md-3 resultado">
-    <?php
-if( is_active_sidebar( 'resul2' ) ){
-dynamic_sidebar('resul2');
+                <div class="col-md-4 resultado" style="background-color: #E9EBF1;">
+                    <h2 class="resultado2"><?php echo $campos_front['servico-resultado2'];?></h2>
+                    
+                    <img class="img-resultado" src="<?php echo $campos_front['servico-img2'];?>"/>
 
-}
-?> 
+                </div>
 
-    </div>
+                <div class="col-md-4 resultado" style="background-color: #E1E2F8;">
+                <h2 class="resultado3"><?php echo $campos_front['servico-resultado3'];?></h2>
+                    
+                    <img class="img-resultado" src="<?php echo $campos_front['servico-img3'];?>"/>
+                </div>
 
-
-    <div class="col-md-3 resultado">
-    <?php
-if( is_active_sidebar( 'resul3' ) ){
-dynamic_sidebar('resul3');
-
-}
-?> 
-    </div>
-
-    <div class="col-md-3 resultado rright">
-    <?php
-if( is_active_sidebar( 'resul4' ) ){
-dynamic_sidebar('resul4');
-
-}
-?> 
-    </div>
-</div>
-
+                <div class="col-md-4 resultado" style="background-color: #E1E2E8;">
+                <h2 class="resultado4"><?php echo $campos_front['servico-resultado4'];?></h2>
+                    
+                    <img class="img-resultado" src="<?php echo $campos_front['servico-img4'];?>"/>
+                </div>
+            </div>
 </section>]
 
 
