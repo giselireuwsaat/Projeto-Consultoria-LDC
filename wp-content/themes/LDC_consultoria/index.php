@@ -41,6 +41,7 @@ Template Name: Blog
 							<a class="card-img-top img-blog" href="<?php the_permalink(); ?>" class="image featured"><?php the_post_thumbnail('full')?></a>
 							<div class="card-body">
                                 <h2 class="card-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+								<?php the_post_thumbnail();?>
 								<p class="card-text"><?php the_excerpt();?></p>
 								<a href="#" class="btn btn-primary">Read More &rarr;</a>
 							</div>

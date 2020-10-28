@@ -23,7 +23,7 @@ Template Name: coaching
             </div>
             <picture class="imagem-servico">
                 
-                    <img class="foto-contato" src=http://localhost/consultoria_LDC/wp-content/uploads/2020/05/riccardo-annandale-7e2pe9wjL9M-unsplash.jpg
+                    <img class="foto-contato" src=https://luiscampaci.com.br//wp-content/uploads/2020/05/riccardo-annandale-7e2pe9wjL9M-unsplash.jpg
                         alt="luis na plateia">
             </picture>
             

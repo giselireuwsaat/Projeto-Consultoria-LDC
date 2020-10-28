@@ -15,7 +15,7 @@ Template Name: home
 <body>
 
 
-    <div class="section">
+    <section id="home">
         <!--Carrosel -->
         <div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
             <!--Indicators-->
@@ -77,9 +77,9 @@ Template Name: home
         </div>
         <!--/.fim Carrossel-->
 
-        </section>
+    </section>
 
-        <section class="separa-sections cursos">
+    <section id="cursos" class="separa-sections">
 
         <img class="h1-img" src="<?php bloginfo('template_directory');?>/assets/img/detalhe_titulo.png">
             <h1>Próximos Cursos</h1>
@@ -168,7 +168,7 @@ Template Name: home
                                         <div class="modal-footer">
                                             <?php if($campos_front['inscreva-se']);?>
 
-                                            <a href="http://localhost/consultoria_LDC/inscreva-se/"> <button type=" button"
+                                            <a href="https://luiscampaci.com.br//inscreva-se/"> <button type=" button"
                                                     class="btn btn-primary">
                                                     Inscreva-se </button>
                                            </a>
@@ -300,7 +300,7 @@ Template Name: home
                                         <div class="modal-footer">
                                             <?php if($campos_front['inscreva-se']);?>
 
-                                            <a href="http://localhost/consultoria_LDC/inscreva-se/"> <button type=" button"
+                                            <a href="https://luiscampaci.com.br//inscreva-se/"> <button type=" button"
                                                     class="btn btn-primary">
                                                     Inscreva-se </button>
                                            </a>
@@ -432,7 +432,7 @@ Template Name: home
                                         <div class="modal-footer">
                                             <?php if($campos_front['inscreva-se']);?>
 
-                                            <a href="http://localhost/consultoria_LDC/inscreva-se/"> <button type=" button"
+                                            <a href="https://luiscampaci.com.br//inscreva-se/"> <button type=" button"
                                                     class="btn btn-primary">
                                                     Inscreva-se </button>
                                            </a>
@@ -493,13 +493,14 @@ Template Name: home
 
     </section>
 
-    <section class="servicos separa-sections">
+    <section id="servicos" class="separa-sections">
 
     
-    <img class="h1-img" src="<?php bloginfo('template_directory');?>/assets/img/detalhe_titulo.png">
+        <img class="h1-img" src="<?php bloginfo('template_directory');?>/assets/img/detalhe_titulo.png">
             <h1>O que fazemos</h1>
             <hr>
-
+            
+            
 
             <div class="row justify-content-md-center servico">
                 <div class="col-md-4 resultado" style="background-color: #F0F2F6;"> 
@@ -528,96 +529,91 @@ Template Name: home
                     <img class="img-resultado" src="<?php echo $campos_front['servico-img4'];?>"/>
                 </div>
             </div>
-</section>]
+    </section>
 
 
 
+    <section id="sobre" class="separa-sections">
 
-<img class="h1-img" src="<?php bloginfo('template_directory');?>/assets/img/detalhe_titulo.png">
+        <img class="h1-img" src="<?php bloginfo('template_directory');?>/assets/img/detalhe_titulo.png">
         <h1>Conheça o Luís</h1>
         <hr>
 
-    <section class="separa-sections sobre">
+        <div class="sobre">
 
 
-
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
 
                     <div class="parte-branca col-md-6">
 
-<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-<h2><?php the_title(); ?></h2>
-<?php the_content(); ?>
+                    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+                    <h2><?php the_title(); ?></h2>
+                    <?php the_content(); ?>
 
-<?php endwhile; else: ?>
+                    <?php endwhile; else: ?>
 
-<p>Sorry, no page found.</p>
+                        <p>Sorry, no page found.</p>
 
-<?php endif; ?>
-
-</div>
-                        </p>
-
-                    </div>
+                    <?php endif; ?>
                 </div>
             </div>
 
-
         </div>
-
     </section>
 
+    <section id="contato" class="separa-sections">
+
+            <img class="h1-img" src="<?php bloginfo('template_directory');?>/assets/img/detalhe_titulo.png">
+                <h1>Contato</h1>
+                <hr>
+         <div class="formulario">                
     
-    <img class="h1-img" src="<?php bloginfo('template_directory');?>/assets/img/detalhe_titulo.png">
-        <h1>Entre em contato comigo</h1>
-        <hr>
-    
-    <section class="separa-sections formulario">
 
     
 
-        <main>
+            <main>
 
-        
-            <h1>Contato</h1>
             
-            <p class="p-formulario"><?php echo $campos_front['contato'];?></p>
+                <h1>Contato</h1>
+                
+                <p class="p-formulario"><?php echo $campos_front['contato'];?></p>
 
-            <p class="p-formulario"></p>
-            <figure>
-                <picture>
-                    <img class="foto-contato" src="<?php bloginfo('template_directory');?>/assets/img/IMG_1595_2.png"
-                        alt="luis lendo um livro">
-                </picture>
-            </figure>
+                <p class="p-formulario"></p>
+                <figure>
+                    <picture>
+                        <img class="foto-contato" src="<?php bloginfo('template_directory');?>/assets/img/IMG_1595_2.png"
+                            alt="luis lendo um livro">
+                    </picture>
+                </figure>
 
-            <form>
-                <span>
-                    <label for="username" class="text-small-uppercase">Nome</label>
-                    <input class="text-body" id="username" name="username" type="text" required>
-                </span>
-                <span>
-                    <label for="email" class="text-small-uppercase">Email</label>
-                    <input class="text-body" id="email" name="email" type="email" required>
-                </span>
-                <span>
-                    <label for="telefone" class="text-small-uppercase">Telefone</label>
-                    <input class="text-body" id="telefone" name="telefone" type="text" required>
-                </span>
-                <span>
-                    <label for="message" class="text-small-uppercase">Mensagem</label>
-                    <textarea name="message" id="message" required></textarea>
-                </span>
-                <input class="text-small-uppercase" id="submit" type="submit" value="Enviar agora">
-            </form>
-        </main>
-
-
-
+                <form>
+                    <span>
+                        <label for="username" class="text-small-uppercase">Nome</label>
+                        <input class="text-body" id="username" name="username" type="text" required>
+                    </span>
+                    <span>
+                        <label for="email" class="text-small-uppercase">Email</label>
+                        <input class="text-body" id="email" name="email" type="email" required>
+                    </span>
+                    <span>
+                        <label for="telefone" class="text-small-uppercase">Telefone</label>
+                        <input class="text-body" id="telefone" name="telefone" type="text" required>
+                    </span>
+                    <span>
+                        <label for="message" class="text-small-uppercase">Mensagem</label>
+                        <textarea name="message" id="message" required></textarea>
+                    </span>
+                    <input class="text-small-uppercase" id="submit" type="submit" value="Enviar agora">
+                </form>
+            </main>
+        </div>
     </section>
 
+
+
+    
     <?php get_footer(); ?>
 
 
