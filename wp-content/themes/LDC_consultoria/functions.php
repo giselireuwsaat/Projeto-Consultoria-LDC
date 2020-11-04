@@ -34,103 +34,30 @@ function apoena_style()
     wp_enqueue_script('main_js', get_template_directory_uri() . '/assets/js/main.js', array(), '', true);
     // wp_enqueue_script('main_js', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js');
 
+    
+    }
+
     add_theme_support( 'post-thumbnails' );
-
-}
-
+    
 
 add_action('wp_enqueue_scripts','apoena_style',0);
-// add_action( 'widgets_init', 'resultados_sidebars');  
 
-// add_action('config_theme');
+add_action('widgets_init','side_bar');
 
+function side_bar() {
+    register_sidebar(
+        array(
+            'name' => 'Barra Lateral Blog',
+            'id' => 'barra_lateral1',
+            'description' => 'Barra Lateral Blog',
+            'before_widget' => '<div class="card my-4">',
+            'after_widget' => '</div>',
+            'before_title'=>'<h4 class="card-header">',
+            'after_title'=>'</h4>',
 
+        )
 
-// function resultados_sidebars(){
-// register_sidebar(
-// array(
-// 'name' => 'resul1',
-// 'id' => 'resul1', 
-// 'description' => 'Type any text here',
-// 'before_widget' => '<div class="widget">',
-// 'after_widget' => '</div>',
-// 'before_title'=>'<h2 class="widget-title">',
-// 'after_title'=>'</h2>'
-// )
-// );
-// register_sidebar(
-//     array(
-//     'name' => 'resul2',
-//     'id' => 'resul2', 
-//     'description' => 'Type any text here',
-//     'before_widget' => '<div class="widget">',
-//     'after_widget' => '</div>',
-//     'before_title'=>'<h2 class="widget-title">',
-//     'after_title'=>'</h2>'
-//     )
-//     );
-//     register_sidebar(
-//         array(
-//         'name' => 'resul3',
-//         'id' => 'resul3', 
-//         'description' => 'Type any text here',
-//         'before_widget' => '<div class="widget">',
-//         'after_widget' => '</div>',
-//         'before_title'=>'<h2 class="widget-title">',
-//         'after_title'=>'</h2>'
-//         )
-//         );
-//         register_sidebar(
-    //             array(
-        //             'name' => 'resul4',
-        //             'id' => 'resul4', 
-        //             'description' => 'Type any text here',
-        //             'before_widget' => '<div class="widget">',
-        //             'after_widget' => '</div>',
-        //             'before_title'=>'<h2 class="widget-title">',
-        //             'after_title'=>'</h2>'
-        //             )
-        //             );
-        // }
-        
-        // function config_theme(){    
-    // add_theme_support( 'automatic-feed-links' );
-    // add_theme_support(
-        // 'post-formats',
-        // array(
-        //     'aside',
-        //     'image',
-        //     'video',
-        //     'quote',
-        //     'link',
-        //     'gallery',
-        //     'status',
-        //     'audio',
-        //     'chat',
-        // )
-    // );
-    // add_theme_support(
-        // 'html5',
-//         array(
-//             'search-form',
-//             'comment-form',
-//             'comment-list',
-//             'gallery',
-//             'caption',
-//             'script',
-//             'style',
-//         )
-//     );
-// }
+        );
+}
 
-
-
-
-
-
-
-// function add_favicon() {
-//     echo '<link rel="shortcut icon" sizes="32x32" type="image/png" href="'.get_template_directory_uri().'/img/Logo Alta Resolucao PPT.png">;
-// }
-
-// add_action('add_favicon')
+?>

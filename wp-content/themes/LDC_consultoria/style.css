@@ -148,7 +148,7 @@ svg {
 
 .curso {
     padding: 1rem;
-    background-color: #e9ecef; 
+    background-color: #E1E2F8; 
     color: #fff;
     text-align: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -223,7 +223,7 @@ svg {
 }
 
 .parte-branca {
-    background: #e9ecef;
+    background: #E1E2F8;
     margin: 2vw 0vw 0vw 0vw;
     padding: 4vw 1vw 2vw 2vw;
     float: right;
@@ -391,7 +391,7 @@ main {
     overflow: hidden;
     position: relative;
     width: 90%;
-    background: #e9ecef; 
+    background: #E1E2F8; 
     border-radius: 0.25rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
@@ -477,7 +477,7 @@ footer 2
 ====================*/
 
 .footer {
-    background-color: #e9ecef;
+    background-color: #E1E2F8;
     padding-top: 1em;
     width: 100% !important;
 }
@@ -488,7 +488,8 @@ footer 2
 
 
 .h4-menu{
-    padding: 0 0 0 0.7em;
+    padding: 0 0 0 0;
+    margin: 0 0 -0.4em 0;
     
 }
 
@@ -555,7 +556,7 @@ footer 2
    
 }
 
-.ttt{
+.desenvolvedor{
     background-color: lightgrey;
     color: white;
     height: 2em;
@@ -565,57 +566,26 @@ footer 2
 
 /* Blog */
 
-/* Pagination */
 
 .blog{
-    background-color: rgb(220, 230, 242);
+    background-color: #E1E2F8;
+    padding: 3em 3em 3em 3em;
 }
 
-.img-blog img{
-    max-width: 607px;
-    height: auto;
-
+.colunabranca{
+    background-color:  white;
+    padding: 1.5em;
 }
 
-
-
-.pagination .pages {
-    display: inline-block;
-    font-weight: 700;
+.parte-texto{
+    margin: 0em 0em 0 0em;
 }
 
-    .pagination .pages span {
-        display: inline-block;
-        width: 1.5em;
-        text-align: center;
-        margin: 0 0.4em 0 0;
-    }
+.sidebar{
+    margin: 0em 0px 0px 4em;
+}
 
-    .pagination .pages a {
-        cursor: pointer;
-        display: inline-block;
-        text-align: center;
-        text-decoration: none;
-        color: inherit;
-        background-color: #e8e8e8;
-        background-image: url("images/bg02.png");
-        color: #565656;
-        margin: 0 0.4em 0 0;
-        border-radius: 0.4em;
-        -moz-transition: background-color .25s ease-in-out;
-        -webkit-transition: background-color .25s ease-in-out;
-        -ms-transition: background-color .25s ease-in-out;
-        transition: background-color .25s ease-in-out;
-        box-shadow: inset 0 0.075em 0.25em 0 rgba(0, 0, 0, 0.1);
-    }
-
-        .pagination .pages a:hover {
-            background-color: #dadada;
-        }
-
-        .pagination .pages a.active {
-            background-color: #364050;
-            color: #fff;
-            box-shadow: none;
-            text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.5);
-        }
+.card-header{
+  
+/* border-top: 3px solid rgb(55, 96, 146); */
+}

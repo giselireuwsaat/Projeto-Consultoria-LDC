@@ -11,13 +11,13 @@ msgstr ""
 "Language: pt_BR\n"
 "Project-Id-Version: Themes - Twenty Sixteen\n"
 
-#. Theme Name of the theme
-msgid "Twenty Sixteen"
-msgstr "Twenty Sixteen"
-
 #. Description of the theme
 msgid "Twenty Sixteen is a modernized take on an ever-popular WordPress layout — the horizontal masthead with an optional right sidebar that works perfectly for blogs and websites. It has custom color options with beautiful default color schemes, a harmonious fluid grid using a mobile-first approach, and impeccable polish in every detail. Twenty Sixteen will make your WordPress look beautiful everywhere."
 msgstr "Twenty Sixteen é uma abordagem modernizada de um sempre popular template para WordPress — O cabeçalho horizontal com barra lateral direita opcional funciona perfeitamente para blogs e sites. Tem opções de cores personalizadas com belos esquemas de cores por padrão, uma harmoniosa grade fluida usando abordagem mobile-first e um polimento impecável em cada detalhe. Twenty Sixteen fará seu WordPress parecer lindo em todos os lugares."
+
+#. Theme Name of the theme
+msgid "Twenty Sixteen"
+msgstr "Twenty Sixteen"
 
 #: functions.php:204
 msgid "Bright Red"
@@ -183,15 +183,15 @@ msgctxt "Used before publish date."
 msgid "Posted on"
 msgstr "Publicado em"
 
-#: inc/template-tags.php:40
-msgctxt "Used before post format."
-msgid "Format"
-msgstr "Formato"
-
 #. translators: %s: Post title.
 #: inc/template-tags.php:53
 msgid "Leave a comment<span class=\"screen-reader-text\"> on %s</span>"
 msgstr "Deixe um comentário <span class=\"screen-reader-text\"> em %s</span>"
+
+#: inc/template-tags.php:40
+msgctxt "Used before post format."
+msgid "Format"
+msgstr "Formato"
 
 #: inc/template-tags.php:26
 msgctxt "Used before post author name."
@@ -210,10 +210,6 @@ msgstr "Cinza"
 msgid "Dark"
 msgstr "Escuro"
 
-#: inc/customizer.php:221
-msgid "Main Text Color"
-msgstr "Cor de texto principal"
-
 #: inc/customizer.php:317
 msgid "Default"
 msgstr "Padrão"
@@ -221,6 +217,10 @@ msgstr "Padrão"
 #: inc/customizer.php:242
 msgid "Secondary Text Color"
 msgstr "Cor de texto secundária"
+
+#: inc/customizer.php:221
+msgid "Main Text Color"
+msgstr "Cor de texto principal"
 
 #: inc/customizer.php:200
 msgid "Link Color"
@@ -230,19 +230,19 @@ msgstr "Cor de Link"
 msgid "Page Background Color"
 msgstr "Cor de fundo da página"
 
-#: single.php:31 image.php:107
-msgctxt "Parent post link"
-msgid "<span class=\"meta-nav\">Published in</span><span class=\"post-title\">%title</span>"
-msgstr "<span class=\"meta-nav\">Publicado em</span><span class=\"post-title\">%title</span>"
+#: inc/customizer.php:153
+msgid "Base Color Scheme"
+msgstr "Paleta de cores base"
 
 #. translators: %s: The current WordPress version.
 #: inc/back-compat.php:42 inc/back-compat.php:56 inc/back-compat.php:75
 msgid "Twenty Sixteen requires at least WordPress version 4.4. You are running version %s. Please upgrade and try again."
 msgstr "Twenty Sixteen requer pelo menos a versão 4.4 do WordPress. Você está rodando a versão %s. Por favor atualize e tente novamente."
 
-#: inc/customizer.php:153
-msgid "Base Color Scheme"
-msgstr "Paleta de cores base"
+#: single.php:31 image.php:107
+msgctxt "Parent post link"
+msgid "<span class=\"meta-nav\">Published in</span><span class=\"post-title\">%title</span>"
+msgstr "<span class=\"meta-nav\">Publicado em</span><span class=\"post-title\">%title</span>"
 
 #: image.php:77
 msgctxt "Used before full size attachment link."
@@ -270,40 +270,40 @@ msgstr "Menu"
 msgid "Skip to content"
 msgstr "Pular para o conteúdo"
 
-#: functions.php:419
-msgid "expand child menu"
-msgstr "expandir submenu"
-
 #: functions.php:420
 msgid "collapse child menu"
 msgstr "fechar submenu"
+
+#: functions.php:419
+msgid "expand child menu"
+msgstr "expandir submenu"
 
 #: functions.php:338
 msgctxt "Inconsolata font: on or off"
 msgid "on"
 msgstr "ativa"
 
-#: functions.php:279
-msgid "Content Bottom 1"
-msgstr "Conteúdo inferior 1"
-
-#: functions.php:281 functions.php:293
-msgid "Appears at the bottom of the content on posts and pages."
-msgstr "Aparece na parte inferior do conteúdo nos posts e páginas."
-
-#: functions.php:291
-msgid "Content Bottom 2"
-msgstr "Conteúdo inferior 2"
+#: functions.php:330
+msgctxt "Montserrat font: on or off"
+msgid "on"
+msgstr "ligada"
 
 #: functions.php:322
 msgctxt "Merriweather font: on or off"
 msgid "on"
 msgstr "ligada"
 
-#: functions.php:330
-msgctxt "Montserrat font: on or off"
-msgid "on"
-msgstr "ligada"
+#: functions.php:291
+msgid "Content Bottom 2"
+msgstr "Conteúdo inferior 2"
+
+#: functions.php:281 functions.php:293
+msgid "Appears at the bottom of the content on posts and pages."
+msgstr "Aparece na parte inferior do conteúdo nos posts e páginas."
+
+#: functions.php:279
+msgid "Content Bottom 1"
+msgstr "Conteúdo inferior 1"
 
 #: functions.php:267
 msgid "Sidebar"
@@ -356,13 +356,13 @@ msgstr "Parece que nada foi encontrado por aqui. Tente uma busca talvez?"
 msgid "Oops! That page can&rsquo;t be found."
 msgstr "Opa! A página não pode ser encontrada,"
 
-#. Theme URI of the theme
-msgid "https://wordpress.org/themes/twentysixteen/"
-msgstr "https://wordpress.org/themes/twentysixteen/"
-
 #. Author of the theme
 msgid "the WordPress team"
 msgstr "a equipe do WordPress"
+
+#. Theme URI of the theme
+msgid "https://wordpress.org/themes/twentysixteen/"
+msgstr "https://wordpress.org/themes/twentysixteen/"
 
 #. Author URI of the theme
 #: footer.php:60

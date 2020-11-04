@@ -7,107 +7,94 @@ Template Name: Blog
 
         
 <?php get_header(); ?>
-
-<section class="blog">     
+<section class="separa-sections">
+<img class="h1-img" src="<?php bloginfo('template_directory');?>/assets/img/detalhe_titulo.png">
+<h1>Campaci's Blog
+  <small>Dicas, Estratégias e Soluções para você! </small>
+</h1>
+<hr>
 	
-	<div class="container">
-
-		<div class="row">
-
-<!-- Blog Entries Column -->
-			<div class="col-md-8">
 
 
-		<!-- verificar se é necessario -->
-			<div id="content">
-				<div class="inner">
+  <!-- Page Content -->
+  <div class="container-fluid">
+
+    <div class="row">
+
+      <!-- Blog Entries Column -->
+      <div class="col-md-7 parte-texto blog">
+
 
         <!-- Blog Post -->
+        <article>
+        <?php
+            if (have_posts()): 
+              
+              while (have_posts() ): the_post();
+              ?>
+
+            <div class="card mb-4">
+        
+              <img class="card-img-top"<?php the_post_thumbnail(array(750, 300));?>> 
+              <div class="card-body">
+                <h2 class="card-title"><a class="text-muted" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+                <p class="card-text"><?php the_excerpt() ;?></p>
+          <!-- <a href="#" class="btn btn-primary">Read More &rarr;</a> -->
+          <input class="text-small-uppercase" id="submit" type="submit" value="Read more">
+
+              </div>
+              <div class="card-footer text-muted">
+                Publicado em <?php echo get_the_date(); ?>
+                <a href="#">algum link</a>
+          </div>
+            </div>
+        <?php
+            endwhile;
+          else:
+            ?>
+            <p> sem post para exibir</p>
+          <?php endif; ?>
+        </article>
+
+
+        <!-- Pagination -->
+        <ul class="pagination justify-content-center mb-4">
+          <li class="page-item">
+            <a class="page-link" href="#">&larr; Older</a>
+          </li>
+          <li class="page-item disabled">
+            <a class="page-link" href="#">Newer &rarr;</a>
+          </li>
+        </ul>
+
+      </div>
+
+
+          <!-- white Column -->
+          <!-- <div class="colunabranca">
+
+
+
+          </div>
+ -->
+
+
+
+
+
+          <!-- Sidebar Widgets Column -->
+      
+          <?php get_sidebar();?>
+    </div>
+  </div> 
        
-
-					<!-- Post -->
-					<article class="box post post-excerpt">
-						
-						
-						<?php if ( have_posts() ) : 
-							while ( have_posts() ) : the_post(); 
-							?>
-                        
-                        
-                        <!-- Post -->
-					<div class="card mb-4">
-						<article class="box post post-excerpt">
-                            <header>
-							<a class="card-img-top img-blog" href="<?php the_permalink(); ?>" class="image featured"><?php the_post_thumbnail('full')?></a>
-							<div class="card-body">
-                                <h2 class="card-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-								<?php the_post_thumbnail();?>
-								<p class="card-text"><?php the_excerpt();?></p>
-								<a href="#" class="btn btn-primary">Read More &rarr;</a>
-							</div>
-							<div class="card-footer text-muted">
-								<span class="date"><span class="month"><?php echo get_the_date('M'); ?><span>,</span></span> <span class="day"><?php echo get_the_date('d'); ?></span><span class="year">, <?php echo get_the_date('yy'); ?></span>.</span>								
-							</div>
-							</header>
-							
-					</div>
-							
-						
-						</article>
-                        <?php endwhile; else: ?>
+      
+	
 
 
 
-	                    <?php endif; ?>
-						</article>
-					
+	
 
-					<!-- Pagination -->
-						<div class="pagination">
-							<!--<a href="#" class="button previous">Previous Page</a>-->
-							<div class="pages">
-								<a href="#" class="active">1</a>
-								<a href="#">2</a>
-								<a href="#">3</a>
-								<a href="#">4</a>
-								<span>&hellip;</span>
-								<a href="#">20</a>
-							</div>
-							<a href="#" class="button next">Next Page</a>
-						</div>
-
-				</div>
-			</div>
-
-		
-				<!-- Recent Posts -->
-					<section class="box recent-posts">
-						<header>
-							<h2>Recent Posts</h2>
-						</header>
-						<ul>
-							<li><a href="#">Lorem ipsum dolor</a></li>
-							<li><a href="#">Feugiat nisl aliquam</a></li>
-							<li><a href="#">Sed dolore magna</a></li>
-							<li><a href="#">Malesuada commodo</a></li>
-							<li><a href="#">Ipsum metus nullam</a></li>
-						</ul>
-					</section>
-
-				<!-- Recent Comments -->
-					<section class="box recent-comments">
-						<header>
-							<h2>Recent Comments</h2>
-						</header>
-						<ul>
-							<li>case on <a href="#">Lorem ipsum dolor</a></li>
-							<li>molly on <a href="#">Sed dolore magna</a></li>
-							<li>case on <a href="#">Sed dolore magna</a></li>
-						</ul>
-					</section>
-
-		</div>
-	</div>
 </section>
 		
 <?php get_footer(); ?>  

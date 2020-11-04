@@ -52,14 +52,13 @@
                     </div>
                         
                     <div class="col-md-3 footer-border feed-footer">
-                        <h4>Comece agora mesmo</h4>
+                        <h4 class="h4-menu">Comece agora mesmo</h4>
                         <p>
                         <?php $campos_front= get_field('home');?>
                         <?php if($campos_front['inscreva-se']);?>
 
-                        <a href="https://luiscampaci.com.br//inscreva-se/"> <button type=" button"
-                        class="btn btn-primary">
-                        Inscreva-se </button>
+                        <a href="https://luiscampaci.com.br//inscreva-se/"> <input class="text-small-uppercase" id="submit" type="submit" value="Inscreva-se">
+
                         </a>
 
                         </p>
@@ -85,7 +84,7 @@
                 </div>
 
 
-                <div class="row footer-row ttt">
+                <div class="row footer-row desenvolvedor">
                 <p class="copyright"> Copyright © 2020 Todos os direitos reservados | <a class="text-muted" target="_blank" href="https://giselireuwsaat.github.io/Portfolio/">Desenvolvido por: SunnyDay</p></a>
 
                 </div>
